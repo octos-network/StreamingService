@@ -62,8 +62,8 @@ function addFilmToWatchlist(index) {
 
 // function for displaying the watchlist
 function showWatchlist() {
-    const watchlist = document.getElementById('watchlist');
-    watchlist.innerHTML = '';
+    const watchlistFilms = document.getElementById('watchlist');
+    watchlistFilms.innerHTML = '';
     watchlist.forEach((film, index) => {
         const watchlistItem = document.createElement('div');
         watchlistItem.classList.add('film');
@@ -76,7 +76,7 @@ function showWatchlist() {
             <button onclick="watchFilm(event, ${index})">Watch Film</button>
             <button onclick="removeFilmFromWatchlist(${index})">Remove from Watchlist</button>
         `;
-        watchlist.appendChild(watchlistItem);
+        watchlistFilms.appendChild(watchlistItem);
     });
 }
 

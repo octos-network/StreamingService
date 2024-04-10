@@ -48,10 +48,13 @@ function showFilms() {
     });
 }
 
+// "database" for Watchlist
+let watchlist = [];
+
 // function for displaying the watchlist
 function showWatchlist() {
-    const watchlist = document.getElementById('watchlist');
-    watchlist.innerHTML = '';
+    const watchlistFilms = document.getElementById('watchlist');
+    watchlistFilms.innerHTML = '';
     watchlist.forEach((film) => {
         const watchlistItem = document.createElement('div');
         watchlistItem.classList.add('film');
@@ -62,7 +65,7 @@ function showWatchlist() {
             <p>Length: ${film.length} minutes</p>
             <p>Publication year: ${film.year}</p>
         `;
-        watchlist.appendChild(watchlistItem);
+        watchlistFilms.appendChild(watchlistItem);
     });
 }
 
