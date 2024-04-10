@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streaming Service</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Streaming Service</h1>
+      <form id="filmForm">
+        <input type="text" id="titel" placeholder="titel" />
+        <input type="text" id="genre" placeholder="genre" />
+        <input type="text" id="mainActor" placeholder="main actor" />
+        <input type="number" id="length" placeholder="lengt (minutes)" />
+        <input type="number" id="year" placeholder="publication year" />
+        <button type="submit">Add film</button>
+      </form>
+
+      <!-- showing films -->
+      <div id="filmList">
+        <!-- films are added here dynamically -->
+      </div>
+
+      <!-- Watchlist -->
+      <h2>Watchlist</h2>
+      <div id="watchlist">
+        <!-- films in the Watchlist are added here dynamically -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
